@@ -195,8 +195,35 @@
     flex-direction: column;   */
 } 
 
-
-
+/* Join section */
+.join{
+    max-width: 1440px;
+    height: 533px;
+    margin: 0 auto;
+    background-image: url('./assets/news-letter-bg.png');
+    background-size: cover;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join h3{
+    color: #FFFFFF;
+    margin-bottom: 23px;
+}
+.btn1{
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 19px 55px;
+    background-color: #E95A08;
+    border: none;
+    margin-left: -5px;
+}
+.join input{
+    color: rgba(0, 0, 0, 0.5);
+    padding: 19px 540px 19px 20px;
+}
 /* Responsive for mobile devices */
 @media screen and (max-width: 576px) {
 .sec-title{
@@ -241,6 +268,7 @@
 /* flower lover section styles */
 .flower-lover{
     max-width: 576px;
+    height: auto;
     flex-direction: column;
     gap: 18px;
     margin-bottom: 143px;
@@ -255,6 +283,23 @@
 }
 .flower-lover-des li{
     margin-top: 16px;
+}
+
+/* join section */
+.join{
+    max-width: 576px;
+    height: 276px;
+    margin: 0 auto;
+    background-size: 100%;
+    justify-items: center;
+}
+.btn1{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.join input{
+    padding-left: 20px;
+    padding-right: 114px;
 }
     
 }
