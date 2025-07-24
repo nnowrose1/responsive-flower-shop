@@ -44,7 +44,7 @@
 }
  .items {
   display: flex;
-   justify-content: space-between; 
+justify-content: space-between; 
 
 } 
 .nav-right li {
@@ -158,10 +158,10 @@
   margin: 0 auto;
   margin-bottom: 134px;
   display: flex;
-  /* gap: 60px; */
-  justify-content: space-between;
+   gap: 60px; 
+  /* justify-content: space-between; */
   align-items: center;
-  /* border: 2px solid tomato; */
+   border: 2px solid tomato; 
 }
 .flower-lover-img {
   position: relative;
@@ -176,21 +176,31 @@
   position: absolute;
   top: -21%;
   left: 65%;
+  z-index: 2; 
+  /* box-shadow:-4px 10px 4px 0px rgba(0, 0, 0, 0.25) ; */
   filter: drop-shadow(-4px 10px 4px 0px rgba(0, 0, 0, 0.25));
-  /* z-index: 1; */
   /* margin-left: 360px; */
   /* margin-bottom: -50px; */
 }
+/* .badge{
+    display: inline;
+     box-shadow:-4px 10px 4px 0px rgba(0, 0, 0, 0.25) ; 
+} */
 .flower-lover-des {
   max-width: 540px;
   text-align: left;
-  /* height: 521px; */
+   height: 521px; 
+   border: 2px solid green;
 }
+/* .flower-lover-des h3{
+    margin-left: -20px;
+} */
 .flower-lover-des li {
   /* list-style-position: outside; */
   margin-top: 20px;
   color: rgba(0, 0, 0, 0.5);
-  list-style-position: inside;
+  /* padding-left: 50px; */
+ list-style-position: inside;  
 }
 
 /* Latest deal section styles */
@@ -208,8 +218,6 @@
   margin: auto;
   margin-top: 16px;
   /* border: 2px solid blue; */
-  /* padding-left: 276px;
-   padding-right: 276px; */
 }
 .deal-card {
   max-width: 1140px;
@@ -219,7 +227,7 @@
   grid-template-columns: 367px 753px;
   /* grid-template-rows: repeat(2,1fr); */
   gap: 22px;
-  border: 2px solid blueviolet;
+  /* border: 2px solid blueviolet; */
   margin-bottom: 120px;
 }
 #deal-box1,
@@ -227,16 +235,19 @@
   /* max-width: 367px; */
   height: 197px;
   border-radius: 14px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 #deal-box2 {
-  border: 2px solid green;
+max-width: 753px;
+height: 423px;
+  /* border: 2px solid green; */
   border-radius: 14px;
   grid-row: span 2;
   background-image: url("./assets/deal-zabo.png");
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   /* text-align: center; */
   position: relative;
 }
@@ -247,21 +258,77 @@
   font-size: 2.5rem;
   color: #ffffff;
 }
+.line{
+    border-left: 3px solid  #ffffff;
+    padding-right: 15px; 
+    padding-left: 15px;
+}
 #deal-box2 a {
   font-weight: 600;
   font-size: 1.75rem;
   color: #ffffff;
 }
-#deal-box2 .deal-box {
-  text-align: center;
-  position: absolute;
+#deal-box2{
+  /* text-align: center; */
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  /* max-width: 753px; 
+  transform: translate(-50%, -50%); */
+   /* max-width: 753px;  */
     display: flex;
-    align-items: center;
-    flex-direction: column;   */
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;  
+}
+#deal-box1{
+ background-image: url("./assets/deal-bloom.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   flex-direction: column;  
+   text-align: center;
+}
+#deal-box1 p {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+#deal-box1 a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 19px;
+}
+#deal-box1 .line, #deal-box3 .line{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#deal-box3{
+ background-image: url("./assets/deal-ana.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   flex-direction: column;  
+   text-align: center;
+}
+#deal-box3 p {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+#deal-box3 a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 19px;
 }
 
 /* Join section */
@@ -283,17 +350,20 @@
   color: #ffffff;
   margin-bottom: 23px;
 }
+.subscribe{
+    display: flex; 
+}
 .btn1 {
   color: #ffffff;
   font-weight: 600;
-  padding: 19px 55px;
+  padding: 19px 53.5px;
   background-color: #e95a08;
   border: none;
   margin-left: -5px;
 }
 .join input {
   color: rgba(0, 0, 0, 0.5);
-  padding: 19px 540px 19px 20px;
+  padding: 15.5px 540px 15.5px 20px;
 }
 
 /* footer section */
@@ -324,6 +394,10 @@ footer{
     display: flex;
     gap: 24px;
 } 
+.footer-right .twitter{
+    max-width: 36px;
+    max-height: 36px;
+}
 .footer-middle ul{
     display: flex;
     flex-direction: column; 
@@ -366,12 +440,13 @@ footer{
     margin-right: 16px;
     height: auto;
     justify-items: center;
+    /* border: 2px solid green; */
 }
 .nav-right{
-    max-width: 113px;
-    height: 24px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+max-width: 113px;
+height: 24px;
+padding-top: 0px;
+padding-bottom: 0px;
 }
 .nav-right a{
     display: none;
@@ -448,6 +523,47 @@ footer{
     margin-top: 16px;
   }
 
+  /* Latest deals section */
+  .deal-des {
+  max-width: 576px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 51.5px;
+  /* border: 2px solid tomato; */
+}
+.deal-des p{
+    margin-left: 28.5px;
+    margin-right: 28.5px;
+}
+.deal-card {
+  max-width: 576px;
+  height: fit-content;
+  margin: 0 auto;
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+ flex-direction: column;
+  /* border: 2px solid blueviolet; */
+  margin-bottom: 40px;
+}
+#deal-box2{
+    max-width: 576px;
+    height: 197px;
+}
+  #deal-box2 p {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+#deal-box2 a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 19px;
+}
+
+
   /* join section */
   .join {
     max-width: 576px;
@@ -457,12 +573,16 @@ footer{
     justify-items: center;
   }
   .btn1 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+  /* .subscribe{
+    margin-left: 36px;
+    margin-right: 36px;
+  } */
   .join input {
     padding-left: 20px;
-    padding-right: 114px;
+    padding-right: 100px;
   }
   /* footer section */
   footer{
