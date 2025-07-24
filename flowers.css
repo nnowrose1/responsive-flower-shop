@@ -63,8 +63,6 @@
 .nav-right li:nth-child(4){
   color: #000000;
 }
-
-
 /* banner section style */
 .banner {
   max-width: 1140px;
@@ -273,6 +271,8 @@
   margin: 0 auto;
   background-image: url("./assets/news-letter-bg.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -294,6 +294,60 @@
 .join input {
   color: rgba(0, 0, 0, 0.5);
   padding: 19px 540px 19px 20px;
+}
+
+/* footer section */
+footer{
+    max-width: 1440px;
+    height: 348px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 1px solid red; */
+}
+.footer-content{
+    max-width: 1120px;
+    height: 248px;
+    margin: 50px 160px;
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 110.67px;
+}
+.footer-left{
+    max-width: 359px;
+    height: 179px;
+}
+.footer-left p{
+    color: rgba(0, 0, 0, 0.5);
+}
+ .footer-right{
+    max-width: 216px;
+    height: 36px;
+    display: flex;
+    gap: 24px;
+} 
+.footer-middle ul{
+    display: flex;
+    flex-direction: column; 
+    gap: 32px;
+}
+.footer-middle li{
+    list-style: none;
+}
+.footer-middle a{
+    text-decoration: none;
+    color: #6B7280;
+    flex: 1;
+}
+.footer-second-middle ul{
+    display: flex;
+    flex-direction: column; 
+    gap: 32px;
+}
+.footer-second-middle li{
+    list-style: none;
+}
+.footer-second-middle a{
+    text-decoration: none;
+    color: #6B7280; 
 }
 /* Responsive for mobile devices */
 @media screen and (max-width: 576px) {
@@ -388,6 +442,7 @@
   }
   .flower-lover-des {
     max-width: 361px;
+    text-align: left;
   }
   .flower-lover-des li {
     margin-top: 16px;
@@ -398,7 +453,7 @@
     max-width: 576px;
     height: 276px;
     margin: 0 auto;
-    background-size: 100%;
+    /* background-size: 100%; */
     justify-items: center;
   }
   .btn1 {
@@ -409,4 +464,21 @@
     padding-left: 20px;
     padding-right: 114px;
   }
+  /* footer section */
+  footer{
+    max-width: 576px;
+    height: fit-content;
+}
+.footer-content{
+    max-width: 576px;
+    height: fit-content;
+    margin: 50px 14px 50px 20px;
+    /* border: 2px solid green; */
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-left{
+    height: auto;
+}
+
 }
