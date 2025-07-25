@@ -236,6 +236,7 @@
   /* border: 2px solid green; */
   border-radius: 14px;
   grid-row: span 2;
+  /* background-color: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); */
   background-image: url("./assets/deal-zabo.png");
   background-size: cover;
   background-position: center;
@@ -563,6 +564,7 @@ footer {
   #deal-box2 {
     max-width: 576px;
     height: 197px;
+    order: 1;
   }
   #deal-box2 p {
     font-weight: bold;
@@ -584,14 +586,16 @@ footer {
     justify-items: center;
   }
   .btn1 {
-    padding: 19px 12px;
+     padding: 19px 12px; 
+    max-width: 103px;
   }
   /* .subscribe{
     margin-left: 36px;
     margin-right: 36px;
   } */
   .join input {
-    padding: 15.5px 100px 15.5px 20px;
+    padding: 15.5px 100px 15.5px 20px; 
+    max-width: 218px;
   }
   /* footer section */
   footer {
